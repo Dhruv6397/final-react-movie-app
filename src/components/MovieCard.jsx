@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import './MovieCard.css'
-import Image from './image.jpg'
+import './../style/MovieCard.css'
+import Image from './../image.jpg'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 export default function MovieCard({mode,movie}) {

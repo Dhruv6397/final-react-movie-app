@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import './TVCard.css'
-import Image from './image.jpg'
+import './../style/TVCard.css'
+import Image from './../image.jpg'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 

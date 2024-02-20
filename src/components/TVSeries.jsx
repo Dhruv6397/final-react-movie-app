@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import MovieCard from './MovieCard'
-import './Movies.css'
-export default function Movies({movies,mode}) {
+import './../style/TVSeries.css'
+import TVCard from './TVCard'
+export default function TVSeries({series,mode}) {
   const [sortOrder,setSortOrder] = useState('asc')
-  const sortedOrder = movies.sort((a,b)=>{
+  const sortedOrder = series.sort((a,b)=>{
     if(sortOrder === "asc"){
         return a.vote_average - b.vote_average
     } else if(sortOrder==="desc") {
@@ -16,19 +16,19 @@ export default function Movies({movies,mode}) {
       return a.vote_average - b.vote_average
     }
 })
-  return ( 
-    <>
-      <div className={mode?'dark-movies-main-container':'light-movies-main-container'}>
+  return (
+    <> 
+      <div className={mode?'dark-tv-main-container':'light-tv-main-container'}>
         <div className={mode?'sort-buttons dark-sort-buttons':'sort-buttons light-sort-buttons'}>
             <button onClick={()=>setSortOrder('asc')}>RATING ASC</button>
             <button onClick={()=>setSortOrder('desc')}>RATING DESC</button>
             <button onClick={()=>setSortOrder('countAsc')}>VOTES ASC</button>
             <button onClick={()=>setSortOrder('countDesc')}>VOTES DESC</button>
         </div>
-        <div className={mode?'dark-movies-container':'light-movies-container'}>
-        {sortedOrder.map((movie)=>(
-        <li><MovieCard mode={mode} key={movie.id} movie={movie}/></li>
-      ))}
+            <div className={mode?'dark-tv-container':'light-tv-container'}>
+            {sortedOrder.map((tv)=>(
+              <li><TVCard mode={mode} key={tv.id} serie={tv}/></li>
+            ))}
         </div>
       </div>
     </>

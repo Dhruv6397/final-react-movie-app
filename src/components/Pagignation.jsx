@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pagignation.css'
+import './../style/Pagignation.css'
 export default function Pagination({currentPage,totalPages,onPageChange,mode}) {
     const maxButtons = 10;
     const calculateButtonRange = ()=>{

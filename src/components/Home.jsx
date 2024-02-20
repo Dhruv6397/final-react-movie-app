@@ -1,7 +1,7 @@
 import React from 'react'
 import MovieCard from './MovieCard'
 import TVCard from './TVCard'
-import './Home.css'
+import './../style/Home.css'
 import { useNavigate } from 'react-router-dom'
 export default function Home({movies,series,mode}) {
   const navigate = useNavigate();
