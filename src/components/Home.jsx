@@ -8,7 +8,7 @@ export default function Home({movies,series,mode}) {
   return (
 
   <div>
-
+  {/* here we  */}
   <div className={mode?'dark-home-main-container':'light-home-main-container'}>
   {movies.map((movie)=>(
         <li><MovieCard mode={mode} key={movie.id} movie={movie}/></li>
