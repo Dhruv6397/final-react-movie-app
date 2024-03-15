@@ -2,13 +2,13 @@
 
 ### Preview images
 01
-![Image Alt Text]('/src/img/01.png')
+![Image Alt Text](./src/img/01.png)
 02
-![Image Alt Text]('/src/img/02.png')
+![Image Alt Text](./src/img/02.png)
 03
-![Image Alt Text]('/src/img/03.png')
+![Image Alt Text](./src/img/03.png)
 04
-![Image Alt Text]('/src/img/04.png')
+![Image Alt Text](./src/img/04.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
